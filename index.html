@@ -172,7 +172,7 @@
       <div class="loader-wrapper">
         <div class="circle-container">
           <div class="circle-loader"></div>
-          <div class="countdown-text" id="timer1">2:00</div>
+          <div class="countdown-text" id="timer1">0:30</div>
         </div>
         <p>Our AI Assistant is working in the background...</p>
       </div>
@@ -192,7 +192,7 @@
       <div class="loader-wrapper">
         <div class="circle-container">
           <div class="circle-loader"></div>
-          <div class="countdown-text" id="timer2">1:00</div>
+          <div class="countdown-text" id="timer2">0:30</div>
         </div>
         <p>Our AI Assistant is working in the background...</p>
       </div>
@@ -290,11 +290,11 @@ function startSecondRefund() {
 }
 
 function runCountdown(timerId, callback) {
-  let seconds = 60;
+  let seconds = 30;
   const timerEl = document.getElementById(timerId);
   const interval = setInterval(() => {
     const min = Math.floor(seconds / 60);
-    const sec = seconds % 60;
+    const sec = seconds % 30;
     timerEl.textContent = `${min}:${sec.toString().padStart(2, '0')}`;
     if (--seconds < 0) {
       clearInterval(interval);
